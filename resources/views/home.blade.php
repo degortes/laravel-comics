@@ -22,7 +22,9 @@
             <div class="load-more">
                 <a class="btn text-up"href="#">load more</a>
             </div>
-            <nav class="cta">
+        </div>
+        <nav class="cta">
+            <div class="wrapper">
                 <ul>
                     <li>
                         <a href="#">
@@ -56,9 +58,9 @@
                     </li>
                 </ul>
 
-            </nav>
+            </div>
+        </nav>
 
-        </div>
 
     </section>
 </main>
