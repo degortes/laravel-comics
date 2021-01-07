@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-up {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+header ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header .top-head {
+  background-color: blue;
+  padding: 5px 0;
+}
+
+header .top-head li {
+  margin-left: 60px;
+}
+
+header .top-head li a {
+  color: white;
+}
+
+header .sub-head .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#jumbo {
+  height: 400px;
+  background-image: url("/images/jumbotron.jpg");
+}
+
+#products h2 {
+  padding: 10px;
+}
+
+#products .comic-bag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#products .comic-bag .comic-card {
+  padding: 10px;
+  flex-basis: calc(100%/6);
+}
+
+#products .comic-bag .comic-card figure {
+  text-align: center;
+}
+
+#products .comic-bag .comic-card figure img {
+  width: 100%;
+}
+

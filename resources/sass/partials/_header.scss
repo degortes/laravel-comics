@@ -1,0 +1,27 @@
+header {
+    ul {
+        list-style-type: none;
+        text-align: right;
+        li {
+            display: inline-block;
+        }
+    }
+    .top-head {
+        background-color: blue;
+        padding: 5px 0;
+        li {
+            margin-left: 60px;
+            a {
+                color: white;
+            }
+        }
+    }
+    .sub-head {
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+}
