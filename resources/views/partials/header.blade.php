@@ -6,14 +6,14 @@
                         <a class="text-up" href="#">dc power℠ visa®</a>
                     </li>
                     <li>
-                        <a class="text-up" href="#">Additional DC Sites</a>
+                        <a class="text-up" href="#">Additional DC Sites <span class="arrow-down">▼</span> </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="sub-head">
             <div class="wrapper nav-menu">
-                <figure>
+                <figure class="logo">
                     <a href="#">
                         <img src="{{asset('images/dc-logo.png')}}" alt="">
                     </a>
@@ -48,12 +48,15 @@
                             <a href="#" class="text-up">news</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">shop</a>
+                            <a href="#" class="text-up">shop <span class="arrow-down">▼</span></a>
                         </li>
                     </ul>
                 </nav>
-                <form class="" action="index.html" method="post">
-                    <input type="text" placeholder="search"name="" value="">
+                <form>
+                    <input type="text" placeholder="Search"name="" value="">
+                    <a href="#">
+                        <img src="{{asset('images/search-icon.png')}}" alt="">
+                    </a>
                 </form>
             </div>
         </div>

@@ -13,20 +13,49 @@ footer {
     .top-foot {
         padding: 30px 0;
         background-image: url('/images/footer-bg.jpg');
-    }
-    .side {
-        display: flex;
-        div {
-            margin-right: 20px;
+        .copyright {
+            padding: 30px 0;
+            p {
+                color: $foot_link;
+            }
+            a {
+                color: $main_color;
+            }
+        }
+        .side {
+            display: flex;
+            div {
+                margin-right: 20px;
+            }
         }
     }
-    .copyright {
-        padding: 30px 0;
-        p {
-            color: $foot_link;
+    .sub-foot {
+        .spacing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
-        a {
-            color: $main_color;
+        padding: 40px 0;
+        background-color: $sub_foot_bg;
+
+        .sign-up {
+            a {
+                color: $light_link;
+                display: inline-block;
+                padding: 15px 30px;
+                border: 1px solid $main_color;
+            }
+        }
+        .social {
+            h2 {
+                color: $main_color;
+            }
+            display: flex;
+            align-items: center;
+            figure {
+                margin-left: 20px;
+            }
         }
     }
 }

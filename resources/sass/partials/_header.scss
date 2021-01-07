@@ -17,12 +17,16 @@ header {
     }
     .sub-head {
         a {
+            font-family: $title_font;
             display: inline-block;
-            img {
+            .logo img {
                 height: 80px;
             }
         }
         .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             li {
                 padding: 0 10px;
                 a {
@@ -33,12 +37,26 @@ header {
                         color: $main_color;
                         border-bottom: 3px solid $main_color;
                     }
+                    .arrow-down {
+                        color: $main_color;
+
+                    }
                 }
             }
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
+        form {
+            border-bottom: 3px solid $main_color;
+            input {
+                margin-right: 10px;
+                width: 120px;
+                border: none;
+                font-size: 16px;
+                text-align: right;
+                font-weight: bold;
+            }
+
+        }
+
 
     }
 }

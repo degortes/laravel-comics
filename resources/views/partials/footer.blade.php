@@ -107,6 +107,30 @@
         </div>
     </div>
     <div class="sub-foot">
+        <div class="wrapper spacing">
+            <div class="sign-up">
+                <a href="#" class="text-up">sign-up now</a>
+            </div>
+            <div class="social">
+                <h2 class="text-up">follow us</h2>
+                <figure>
+                    <img src="{{asset('images/footer-facebook.png')}}" alt="">
+                </figure>
+                <figure>
+                    <img src="{{asset('images/footer-twitter.png')}}" alt="">
+                </figure>
+                <figure>
+                    <img src="{{asset('images/footer-youtube.png')}}" alt="">
+                </figure>
+                <figure>
+                    <img src="{{asset('images/footer-pinterest.png')}}" alt="">
+                </figure>
+                <figure>
+                    <img src="{{asset('images/footer-periscope.png')}}" alt="">
+                </figure>
+            </div>
+
+        </div>
 
     </div>
 </footer>
