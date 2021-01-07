@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .text-up {
   text-transform: uppercase;
 }
@@ -22,7 +26,6 @@ a {
 }
 
 header ul {
-  list-style-type: none;
   text-align: right;
 }
 
@@ -31,7 +34,7 @@ header ul li {
 }
 
 header .top-head {
-  background-color: blue;
+  background-color: #0282f9;
   padding: 5px 0;
 }
 
@@ -40,7 +43,15 @@ header .top-head li {
 }
 
 header .top-head li a {
-  color: white;
+  color: #fff;
+}
+
+header .sub-head a {
+  display: inline-block;
+}
+
+header .sub-head a img {
+  height: 80px;
 }
 
 header .sub-head .nav-menu {
@@ -49,13 +60,38 @@ header .sub-head .nav-menu {
   align-items: center;
 }
 
+header .sub-head .nav-menu li {
+  padding: 0 10px;
+}
+
+header .sub-head .nav-menu li a {
+  display: block;
+  line-height: 105px;
+  color: #464646;
+}
+
+header .sub-head .nav-menu li a.active,
+header .sub-head .nav-menu li a:hover {
+  color: #0282f9;
+  border-bottom: 3px solid #0282f9;
+}
+
 #jumbo {
   height: 400px;
   background-image: url("/images/jumbotron.jpg");
 }
 
+#products {
+  padding-bottom: 20px;
+  color: #fff;
+  background-color: #1c1c1c;
+}
+
 #products h2 {
-  padding: 10px;
+  padding: 20px;
+  transform: translateY(-50%);
+  background-color: #0282f9;
+  display: inline-block;
 }
 
 #products .comic-bag {
@@ -70,10 +106,54 @@ header .sub-head .nav-menu {
 }
 
 #products .comic-bag .comic-card figure {
+  width: 180px;
+  height: 180px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #products .comic-bag .comic-card figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   width: 100%;
+}
+
+#products .load-more {
+  padding: 40px;
+  text-align: center;
+}
+
+#products .load-more a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #0282f9;
+}
+
+#products .cta {
+  padding: 20px 0;
+  background-color: #0282f9;
+}
+
+#products .cta ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#products .cta ul img {
+  height: 55px;
+}
+
+#products .cta span {
+  color: #fff;
+}
+
+#products .cta img {
+  margin-right: 15px;
+  vertical-align: middle;
 }
 

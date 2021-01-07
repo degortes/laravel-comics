@@ -3,8 +3,14 @@
     background-image: url('/images/jumbotron.jpg');
 }
 #products {
+    padding-bottom: 20px;
+    color: $light_link;
+    background-color: $second_bg_color;
     h2 {
-        padding: 10px;
+        padding: 20px;
+        transform: translateY(-50%);
+        background-color: $main_color;
+        display: inline-block;
     }
     .comic-bag {
         display: flex;
@@ -14,11 +20,48 @@
             padding: 10px;
             flex-basis: calc(100%/6);
             figure {
+                width: 180px;
+                height: 180px;
                 text-align: center;
+                margin-bottom: 10px;
                 img {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
                     width: 100%;
                 }
             }
+        }
+    }
+    .load-more {
+        padding: 40px;
+        text-align: center;
+        a {
+            display: inline-block;
+            padding: 10px 30px;
+            color: $light_link;
+            background-color: $main_color;
+
+        }
+    }
+    .cta {
+        padding: 20px 0;
+        background-color: $main_color;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img {
+                height: 55px;
+            }
+
+        }
+        span {
+            color: $light_link;
+        }
+        img {
+            margin-right: 15px;
+            vertical-align: middle
         }
     }
 

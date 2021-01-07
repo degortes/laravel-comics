@@ -1,23 +1,40 @@
 header {
     ul {
-        list-style-type: none;
         text-align: right;
         li {
             display: inline-block;
         }
     }
     .top-head {
-        background-color: blue;
+        background-color: $main_color;
         padding: 5px 0;
         li {
             margin-left: 60px;
             a {
-                color: white;
+                color: $light_link;
             }
         }
     }
     .sub-head {
+        a {
+            display: inline-block;
+            img {
+                height: 80px;
+            }
+        }
         .nav-menu {
+            li {
+                padding: 0 10px;
+                a {
+                    display: block;
+                    line-height: 105px;
+                    color: $nav_head_color;
+                    &.active, &:hover {
+                        color: $main_color;
+                        border-bottom: 3px solid $main_color;
+                    }
+                }
+            }
             display: flex;
             justify-content: space-between;
             align-items: center;

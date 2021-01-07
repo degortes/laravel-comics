@@ -13,12 +13,50 @@
                         <figure>
                             <img src="{{$item['thumb']}}" alt="">
                         </figure>
-                        <p>{{$item['series']}}</p>
+                        <p class="text-up">{{$item['series']}}</p>
                     </div>
 
                 @endforeach
 
             </div>
+            <div class="load-more">
+                <a class="btn text-up"href="#">load more</a>
+            </div>
+            <nav class="cta">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('/images/buy-comics-digital-comics.png')}}" alt="">
+                            <span class="text-up">digital comics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('/images/buy-comics-merchandise.png')}}" alt="">
+                            <span class="text-up">dc merchandise</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('/images/buy-comics-subscriptions.png')}}" alt="">
+                            <span class="text-up">subscription</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('/images/buy-comics-shop-locator.png')}}" alt="">
+                            <span class="text-up">comics shop locator</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('/images/buy-dc-power-visa.svg')}}" alt="">
+                            <span class="text-up">dc power visa</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
 
         </div>
 

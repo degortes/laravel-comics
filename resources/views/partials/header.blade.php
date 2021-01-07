@@ -14,7 +14,9 @@
         <div class="sub-head">
             <div class="wrapper nav-menu">
                 <figure>
-                    <img src="{{asset('images/dc-logo.png')}}" alt="">
+                    <a href="#">
+                        <img src="{{asset('images/dc-logo.png')}}" alt="">
+                    </a>
                 </figure>
                 <nav>
                     <ul>
@@ -22,28 +24,31 @@
                             <a href="#" class="text-up">Characters</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up active">comics</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">movies</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">tv</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">games</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">collectibles</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">videos</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">fans</a>
                         </li>
                         <li>
-                            <a href="#" class="text-up">Characters</a>
+                            <a href="#" class="text-up">news</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-up">shop</a>
                         </li>
                     </ul>
                 </nav>
