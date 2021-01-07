@@ -52,13 +52,13 @@ header .top-head li a {
   color: #fff;
 }
 
+header .sub-head .logo img {
+  height: 80px;
+}
+
 header .sub-head a {
   font-family: "Open Sans Condensed", sans-serif;
   display: inline-block;
-}
-
-header .sub-head a .logo img {
-  height: 80px;
 }
 
 header .sub-head .nav-menu {

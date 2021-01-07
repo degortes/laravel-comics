@@ -16,12 +16,12 @@ header {
         }
     }
     .sub-head {
+        .logo img {
+            height: 80px;
+        }
         a {
             font-family: $title_font;
             display: inline-block;
-            .logo img {
-                height: 80px;
-            }
         }
         .nav-menu {
             display: flex;
