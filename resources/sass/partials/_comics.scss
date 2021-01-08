@@ -18,6 +18,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .comic-card {
+            color: $light_link;
             padding: 10px;
             flex-basis: calc(100%/6);
             figure {

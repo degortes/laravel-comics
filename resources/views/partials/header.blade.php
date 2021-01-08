@@ -14,7 +14,7 @@
         <div class="sub-head">
             <div class="wrapper nav-menu">
                 <figure class="logo">
-                    <a href="#">
+                    <a href="{{route('home')}}">
                         <img src="{{asset('images/dc-logo.png')}}" alt="">
                     </a>
                 </figure>

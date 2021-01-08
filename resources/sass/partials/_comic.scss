@@ -1,0 +1,42 @@
+#details {
+
+
+    .h-bar {
+        height: 100px;
+        background-color: $main_color;
+        position: relative;
+
+        .big-cover {
+            display: block;
+            position: absolute;
+            bottom: 30px;
+            border: 1px solid white;
+            p {
+                text-align: center;
+                background-color: $main_color;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+            span {
+                position: absolute;
+                background-color: $main_color
+
+            }
+        }
+    }
+
+}
+
+#info-comic {
+    padding: 50px 0;
+    .expanded-info {
+        float: left;
+        width: calc(100% / 3 * 2)
+    }
+    .advertising {
+        float: left;
+        width: calc(100%/3)
+    }
+}

@@ -1,6 +1,6 @@
 <footer>
     <div class="top-foot">
-        <div class="wrapper">
+        <div class="wrapper foot-bg">
             <div class="side">
                 <div class="services">
                     <h3 class="text-up">dc comics</h3>

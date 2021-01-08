@@ -31,6 +31,17 @@ ul {
   margin: auto;
 }
 
+.container {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 header ul {
   text-align: right;
 }
@@ -110,8 +121,14 @@ footer ul li a {
 }
 
 footer .top-foot {
-  padding: 30px 0;
   background-image: url("/images/footer-bg.jpg");
+}
+
+footer .top-foot .foot-bg {
+  padding: 30px 0;
+  background-image: url("/images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 footer .top-foot .copyright {
@@ -191,6 +208,7 @@ footer .sub-foot .social figure {
 }
 
 #products .comic-bag .comic-card {
+  color: #fff;
   padding: 10px;
   flex-basis: calc(100%/6);
 }
@@ -245,5 +263,46 @@ footer .sub-foot .social figure {
 #products .cta img {
   margin-right: 15px;
   vertical-align: middle;
+}
+
+#details .h-bar {
+  height: 100px;
+  background-color: #0282f9;
+  position: relative;
+}
+
+#details .h-bar .big-cover {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  border: 1px solid white;
+}
+
+#details .h-bar .big-cover p {
+  text-align: center;
+  background-color: #0282f9;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#details .h-bar .big-cover span {
+  position: absolute;
+  background-color: #0282f9;
+}
+
+#info-comic {
+  padding: 50px 0;
+}
+
+#info-comic .expanded-info {
+  float: left;
+  width: calc(100% / 3 * 2);
+}
+
+#info-comic .advertising {
+  float: left;
+  width: calc(100%/3);
 }
 

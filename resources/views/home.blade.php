@@ -8,13 +8,15 @@
         <div class="wrapper">
             <h2 class="text-up">Current series</h2>
             <div class="comic-bag">
-                @foreach ($comics as $item)
-                    <div class="comic-card">
-                        <figure>
-                            <img src="{{$item['thumb']}}" alt="">
-                        </figure>
-                        <p class="text-up">{{$item['series']}}</p>
-                    </div>
+                @foreach ($comics as $id => $item)
+                    <a class="comic-card" href="{{route('comic' , ['id' => $id])}}">
+                        <div >
+                            <figure>
+                                <img src="{{$item['thumb']}}" alt="">
+                            </figure>
+                            <p class="text-up">{{$item['series']}}</p>
+                        </div>
+                    </a>
 
                 @endforeach
 
