@@ -1,11 +1,8 @@
 #details {
-
-
     .h-bar {
         height: 100px;
         background-color: $main_color;
         position: relative;
-
         .big-cover {
             display: block;
             position: absolute;
@@ -22,21 +19,68 @@
             span {
                 position: absolute;
                 background-color: $main_color
-
             }
         }
     }
-
 }
 
 #info-comic {
     padding: 50px 0;
     .expanded-info {
         float: left;
-        width: calc(100% / 3 * 2)
+        width: calc(100% / 3 * 2);
+        h1 {
+            margin-bottom: 20px;
+        }
     }
     .advertising {
+        text-align: right;
         float: left;
-        width: calc(100%/3)
+        width: calc(100%/3);
     }
+    .info-bar {
+        border-bottom: 1px solid grey;
+        background-color: green;
+        display: flex;
+        .info-left {
+            border-right: 1px solid grey;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            span {
+                color: white;
+            }
+        }
+        .info-right {
+            color: white;
+            padding: 10px;
+        }
+    }
+    .description {
+        font-size: 15px;
+        line-height: 1.7;
+        padding: 20px 0;
+    }
+}
+
+#summary {
+    .talent {
+        width: 48%;
+        float: left;
+    }
+    .right-sum {
+        display: inline-block;
+        width: 68%;
+    }
+    .specs {
+        width: 48%;
+        float: right;
+    }
+    span {
+        vertical-align: top;
+        display: inline-block;
+        width: 30%;
+    }
+
 }

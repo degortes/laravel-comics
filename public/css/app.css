@@ -301,8 +301,63 @@ footer .sub-foot .social figure {
   width: calc(100% / 3 * 2);
 }
 
+#info-comic .expanded-info h1 {
+  margin-bottom: 20px;
+}
+
 #info-comic .advertising {
+  text-align: right;
   float: left;
   width: calc(100%/3);
+}
+
+#info-comic .info-bar {
+  border-bottom: 1px solid grey;
+  background-color: green;
+  display: flex;
+}
+
+#info-comic .info-bar .info-left {
+  border-right: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+#info-comic .info-bar .info-left span {
+  color: white;
+}
+
+#info-comic .info-bar .info-right {
+  color: white;
+  padding: 10px;
+}
+
+#info-comic .description {
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 20px 0;
+}
+
+#summary .talent {
+  width: 48%;
+  float: left;
+}
+
+#summary .right-sum {
+  display: inline-block;
+  width: 68%;
+}
+
+#summary .specs {
+  width: 48%;
+  float: right;
+}
+
+#summary span {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
 }
 
