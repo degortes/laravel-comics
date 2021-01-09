@@ -39,11 +39,15 @@
         width: calc(100%/3);
     }
     .info-bar {
-        border-bottom: 1px solid grey;
-        background-color: green;
+        border-bottom: 1px solid #357739;
+        background-color: #55ba59;
         display: flex;
         .info-left {
-            border-right: 1px solid grey;
+            p:last-child {
+                color: #bafd9c;
+            }
+            color: #fff;
+            border-right: 1px solid #357739;
             padding: 10px;
             display: flex;
             justify-content: space-between;
@@ -65,6 +69,23 @@
 }
 
 #summary {
+    a {
+        color: #00a9d9;
+    }
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    h2 {
+        margin: 20px 0;
+        color: #003f5e;
+    }
+    li {
+        border-bottom: 1px solid lightgrey;
+        padding: 10px 0;
+        &:first-child {
+            border-top: 1px solid lightgrey;
+
+        }
+    }
     .talent {
         width: 48%;
         float: left;
@@ -77,10 +98,74 @@
         width: 48%;
         float: right;
     }
-    span {
+    h4 {
+        color: #003f5e;
         vertical-align: top;
         display: inline-block;
         width: 30%;
     }
 
+}
+
+#more-services {
+    background-color: #f5f5f5;
+
+    border: 1px solid grey;
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    figure {
+        &:hover {
+            background-color: #fff;
+            figcaption {
+                color: black;
+            }
+
+        }
+        border-left: 1px solid grey;
+        padding: 10px;
+        &:hover img {
+            object-position: 0 -37px;
+        }
+        img {
+            width: 37px;
+            height: 36px;
+            object-fit: none;
+            object-position: 0 0;
+        }
+        &:nth-child(2)  {
+            img {
+                object-position: -37px 0;
+            }
+            &:hover img {
+                object-position: -37px -37px;
+            }
+        }
+        &:nth-child(3)  {
+            img {
+                object-position: -74px 0;
+            }
+            &:hover img {
+                object-position: -74px -37px;
+            }
+        }
+        &:nth-child(4)  {
+            border-right: 1px solid grey;
+            img {
+                object-position: -111px 0;
+            }
+            &:hover img {
+                object-position: -111px -37px;
+            }
+        }
+        figcaption {
+            color: grey;
+            font-family: $title_font;
+            margin-right: 40px;
+            display: inline;
+            vertical-align: top;
+        }
+    }
 }

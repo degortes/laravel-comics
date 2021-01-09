@@ -12,12 +12,8 @@
                     <img src="{{$comic['thumb']}}" alt="">
                     <p class="text-up">view gallery</p>
                 </figure>
-
             </div>
-
         </div>
-
-
     </section>
     <section id="info-comic">
         <div class="container">
@@ -49,7 +45,7 @@
                 <h2>Talent</h2>
                 <ul>
                     <li>
-                        <span>Art By</span>
+                        <h4>Art By</h4>
                         <div class="right-sum">
                             @foreach ($comic['artists'] as $artist)
                                 <a href="#">{{$artist}}@if (!$loop->last),@endif</a>
@@ -57,7 +53,7 @@
                         </div>
                     </li>
                     <li>
-                        <span>Written By</span>
+                        <h4>Written By</h4>
                         <div class="right-sum">
                             @foreach ($comic['writers'] as $artist)
                                 <a href="#">{{$artist}}@if (!$loop->last),@endif</a>
@@ -70,55 +66,71 @@
                 <h2>Specs</h2>
                 <ul>
                     <li>
-                        <span>Series</span>
+                        <h4>Series</h4>
                         <div class="right-sum">
-                            <a href="#">{{$comic['series']}}</a>
+                            <a class="text-up"href="#">{{$comic['series']}}</a>
                         </div>
                     </li>
                     <li>
-                        <span>U.S. Price</span>
+                        <h4>U.S. Price</h4>
                         <div class="right-sum">
-                            <a href="#">{{$comic['price']}}</a>
+                            <p>{{$comic['price']}}</p>
                         </div>
                     </li>
                     <li>
-                        <span>On Sale Date:</span>
+                        <h4>On Sale Date:</h4>
                         <div class="right-sum">
-                            <a href="#">{{$comic['sale_date']}}</a>
+                            <p>{{DateTime::CreateFromFormat('Y-m-d' , $comic['sale_date'])->format('M d Y')}}</p>
                         </div>
                     </li>
                     <li>
-                        <span>Volume/Issue #:</span>
+                        <h4>Volume/Issue #:</h4>
                         <div class="right-sum">
-                            <a href="#">1000</a>
+                            <p>1000</p>
                         </div>
                     </li>
                     <li>
-                        <span>Trim Size:</span>
+                        <h4>Trim Size:</h4>
                         <div class="right-sum">
-                            <a href="#">1000</a>
+                            <p>1000</p>
                         </div>
                     </li>
                     <li>
-                        <span>Page Count:</span>
+                        <h4>Page Count:</h4>
                         <div class="right-sum">
-                            <a href="#">1000</a>
+                            <p>1000</p>
                         </div>
                     </li>
                     <li>
-                        <span>Date:</span>
+                        <h4>Rated:</h4>
                         <div class="right-sum">
-                            <a href="#">1000</a>
+                            <p>1000</p>
                         </div>
                     </li>
-
                 </ul>
-
-
             </div>
-
-
         </div>
+    </section>
+    <section id="more-services">
+        <div class="container cta">
+            <figure>
+                <figcaption class="text-up">digital comics</figcaption>
+                <img src="{{asset('images/cta-icons.png')}}" alt="">
+            </figure>
+            <figure>
+                <figcaption class="text-up">Shop Dc</figcaption>
+                <img src="{{asset('images/cta-icons.png')}}" alt="">
+            </figure>
+            <figure>
+                <figcaption class="text-up">comic shop locator</figcaption>
+                <img src="{{asset('images/cta-icons.png')}}" alt="">
+            </figure>
+            <figure>
+                <figcaption class="text-up">subscriptions</figcaption>
+                <img src="{{asset('images/cta-icons.png')}}" alt="">
+            </figure>
+        </div>
+
     </section>
 
 
